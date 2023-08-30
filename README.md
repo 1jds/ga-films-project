@@ -30,8 +30,9 @@ Here is an illustrative image of the project running on http://localhost:3000/
   - Ternary conditions for conditional rendering
   - If conditions
   - Spread syntax `...`
-  - 
 - CSS
+    - Using child selectors and combinators such as `.FilmLibrary > nav > h2:first-child`
+    - 
 - HTML 5
 - Google fonts and Material icons
 - .env for storing development API key as an environment variable
