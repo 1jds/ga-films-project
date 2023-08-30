@@ -28,3 +28,6 @@
 - HTML 5
 - Google fonts and Material icons
 - .env for storing development API key as an environment variable
+
+## How this project could be improved
+- Make use of TypeScript (e.g. to check API data received for consistency, since I do not control the API and the kinds of data which it emits may be altered by the owner without my knowledge, leading to unexpected bugs in the project).
