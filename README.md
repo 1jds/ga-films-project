@@ -6,6 +6,7 @@ Here is an illustrative image of the project running on http://localhost:3000/
 
 <img alt="Sample Screenshot Mario Movie" src="https://github.com/1jds/ga-films-project/blob/main/ga-films-app-sample-image.png">
 
+
 ## Technologies used in this project
 - React 18.1.0
     - Functional Components
@@ -34,6 +35,7 @@ Here is an illustrative image of the project running on http://localhost:3000/
 - HTML 5
 - Google fonts and Material icons
 - .env for storing development API key as an environment variable
+
 
 ## How this project could be improved
 - Make use of TypeScript (e.g. to check API data received for consistency, since I do not control the API and the kinds of data which it emits may be altered by the owner without my knowledge, leading to unexpected bugs in the project).
