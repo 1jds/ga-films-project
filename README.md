@@ -40,3 +40,7 @@ Here is an illustrative image of the project running on http://localhost:3000/
 
 ## How this project could be improved
 - Make use of TypeScript (e.g. to check API data received for consistency, since I do not control the API and the kinds of data which it emits may be altered by the owner without my knowledge, leading to unexpected bugs in the project).
+- Obviously, the current functionality of this project is very limited. This could be extended by, for example, using cookies, local storage, or even a database to store persistent data such as users' favourites.
+- Features could be added, such as links to trailers for the films previewed.
+- The CSS could be refactored to properly use the CSS custom properties, to remove some redundancies, and to generally organise the code better
+
