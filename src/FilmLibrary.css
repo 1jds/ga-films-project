@@ -1,0 +1,126 @@
+.FilmLibrary {
+  display: grid;
+  grid-template-rows: 28px 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'nav nav'
+    'filmlist filmdetails';
+}
+
+.FilmLibrary > nav {
+  grid-area: nav;
+  display: flex;
+  width: 100%;
+}
+
+.FilmLibrary > nav > h2:first-child {
+  flex: 1 0 33.333333%;
+}
+
+.FilmLibrary > nav h2:last-child {
+  flex: 0 1 66.666666%;
+}
+
+.FilmLibrary .film-list {
+  grid-area: filmlist;
+  flex: 1 0 33.333333%;
+  padding: 0;
+  height: calc(100vh - 28px);
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+}
+
+.FilmLibrary .film-details {
+  grid-area: filmdetails;
+  flex: 0 1 66.666666%;
+  background-color: #f0f0f0;
+  height: calc(100vh - 28px);
+  overflow-y: scroll;
+}
+
+.FilmLibrary .section-title {
+  background-color: #777;
+  color: white;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0.5em;
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.FilmLibrary .film-list-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'a b'
+    'c c';
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.grid-item-a {
+  grid-area: a;
+}
+
+.grid-item-b {
+  grid-area: b;
+}
+
+.grid-item-c {
+  grid-area: c;
+}
+
+.FilmLibrary .film-list-filter {
+  flex-grow: 1;
+  background-color: #bbb;
+  color: white;
+  text-align: center;
+  font-size: 0.75em;
+  font-weight: bold;
+  padding: 0.5em;
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.FilmLibrary .film-list-filter:hover {
+  background-color: hsl(177, 70%, 46%);
+}
+.FilmLibrary .film-list-filter:active {
+  background-color: rgb(40, 205, 197);
+}
+
+.FilmLibrary .film-list-filter.is-active {
+  background-color: lightseagreen;
+}
+
+.FilmLibrary .section-count {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  border-radius: 20%;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+#release-year {
+  display: inline-block;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  font-weight: bold;
+  border: none;
+}
+
+#release-year:focus {
+  box-shadow: 0 0 1px 3px lightseagreen;
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  outline: none;
+}

@@ -1,0 +1,69 @@
+:root {
+  --home-text-color: gold;
+}
+
+.home-background-image {
+  background-image: linear-gradient(black, black),
+    url('https://images.squarespace-cdn.com/content/v1/52d6d1ede4b0b322e9c7a2ea/1577130341850-RLJ57JTPN3EMOGR3SE5G/imgur.jpg?format=1500w');
+  height: 100vh;
+  background-size: cover;
+  background-blend-mode: saturation;
+  padding: 15px;
+}
+
+.border {
+  height: 100%;
+  background-color: none;
+  border: 5px solid var(--home-text-color, gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.central-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 15px;
+}
+
+.central-container > h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.central-container > h1,
+a {
+  color: var(--home-text-color, gold);
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+/* HOVER EFFECT MODIFIED FROM https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--home-text-color, gold);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--home-text-color, gold);
+  transform-origin: bottom right;
+  transition: transform 0.75s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
